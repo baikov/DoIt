@@ -34,7 +34,7 @@ other = "Категории"
 
 # === Pagination ===
 [more]
-other = "Больше"
+other = "Подробнее"
 # === Pagination ===
 
 # === partials/header.html ===
@@ -47,7 +47,7 @@ other = "Сменить Тему"
 
 # === partials/footer.html ===
 [poweredBySome]
-other = "Сделано {{ .Hugo }} | Тема - {{ .Theme }}"
+other = "Сделано на {{ .Hugo }} | Тема - {{ .Theme }}"
 # === partials/footer.html ===
 
 # === partials/comment.html ===
@@ -55,7 +55,7 @@ other = "Сделано {{ .Hugo }} | Тема - {{ .Theme }}"
 other = "en"
 
 [valinePlaceholder]
-other = "Ваш комментарий ..."
+other = "Ваш комментарий..."
 
 [facebookLanguageCode]
 other = "ru_RU"
@@ -66,7 +66,7 @@ other = "ru_RU"
 other = "Поиск"
 
 [searchPlaceholder]
-other = "Поиск заголовков или содержимого ..."
+other = "Поиск заголовков или содержимого..."
 
 [clear]
 other = "Очистить"
@@ -87,18 +87,18 @@ other = "lib/lunr/lunr.ru.js"
 other = "Копировать в буфер обмена"
 
 [cookieconsentMessage]
-other = "Этот сайт использует Cookies для улучшения вашего опыта."
+other = "Этот сайт использует Cookies."
 
 [cookieconsentDismiss]
 other = "Согласен"
 
 [cookieconsentLink]
-other = "Учить больше"
+other = "Подробнее"
 # === partials/assets.html ===
 
 # === partials/plugin/share.html ===
 [shareOn]
-other = "Поделиться в"
+other = "Поделиться"
 # === partials/plugin/share.html ===
 
 # === posts/single.html ===
@@ -126,19 +126,19 @@ other = "просмотров"
 other = "Автор"
 
 [updatedOnDate]
-other = "Oбновлена {{ .Date }}"
+other = "Oбновлено {{ .Date }}"
 
 [readMarkdown]
-other = "Читать Markdown"
+other = "В Markdown"
 
 [back]
 other = "Назад"
 
 [home]
-other = "Домой"
+other = "Главная"
 
 [readMore]
-other = "Читать больше"
+other = "Подробнее"
 # === posts/single.html ===
 
 # === 404.html ===
@@ -146,7 +146,7 @@ other = "Читать больше"
 other = "Страница не найдена"
 
 [pageNotFoundText]
-other = "Страница, которую вы ищете, не существует. Приносим извинения."
+other = "Страница, которую вы ищете, не существует."
 # === 404.html ===
 
 # === shortcodes/admonition.html ===
@@ -163,7 +163,7 @@ other = "Инфо"
 other = "Совет"
 
 [success]
-other = "Удачто"
+other = "Успех"
 
 [question]
 other = "Вопрос"
@@ -189,11 +189,11 @@ other = "Цитата"
 
 # === shortcodes/version.html ===
 [new]
-other = "НОВЫЙ"
+other = "ДОБАВЛЕНО"
 
 [changed]
-other = "ИЗМЕНЕН"
+other = "ИЗМЕНЕНО"
 
 [deleted]
-other = "УДАЛЕН"
+other = "УДАЛЕНО"
 # === shortcodes/version.html ===
