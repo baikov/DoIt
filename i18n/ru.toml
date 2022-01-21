@@ -113,18 +113,18 @@ other = "Содержание"
 other = "Опубликовано {{ .Date }}"
 
 [includedInCategories]
-one = "категория {{ .Categories }}"
-other = "категории {{ .Categories }}"
+one = "категории {{ .Categories }}"
+other = "категориях {{ .Categories }}"
 
 [includedIn]
 other = "Размещено в:"
 
 [includedInAnd]
-other = " |"
+other = "и"
 
 [includedInSeries]
-one = "серия {{ .Series }}"
-other = "серии {{ .Series }}"
+one = "серии {{ .Series }}"
+other = "сериях {{ .Series }}"
 
 [wordCount]
 one = "Одно слово"
