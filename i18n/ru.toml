@@ -117,10 +117,10 @@ one = "категория {{ .Categories }}"
 other = "категории {{ .Categories }}"
 
 [includedIn]
-other = " "
+other = "Размещено в:"
 
 [includedInAnd]
-other = ","
+other = " |"
 
 [includedInSeries]
 one = "серия {{ .Series }}"
