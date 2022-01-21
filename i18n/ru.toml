@@ -32,7 +32,7 @@ other = "Категория"
 other = "Категории"
 
 [series]
-other = "Серии"
+other = "Серия"
 
 # === Taxonomy ===
 
@@ -117,10 +117,10 @@ one = "категория {{ .Categories }}"
 other = "категории {{ .Categories }}"
 
 [includedIn]
-other = "| "
+other = " "
 
 [includedInAnd]
-other = "и"
+other = ","
 
 [includedInSeries]
 one = "серия {{ .Series }}"
