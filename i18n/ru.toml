@@ -36,6 +36,13 @@ other = "Серия"
 
 # === Taxonomy ===
 
+# === Section ===
+
+[recentlyUpdated]
+other = "Недавно обновленные"
+
+# === Section ===
+
 # === Pagination ===
 [more]
 other = "Подробнее"
