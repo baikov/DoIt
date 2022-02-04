@@ -133,7 +133,7 @@ other = "Contents"
 other = "published on {{ .Date }}"
 
 [includedIn]
-other = "included in "
+other = "Included in "
 
 [includedInAnd]
 other = "and"
