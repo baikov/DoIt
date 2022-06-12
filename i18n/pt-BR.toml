@@ -68,8 +68,14 @@ other = "Auto"
 # === partials/header.html ===
 
 # === partials/footer.html ===
-[poweredBySome]
-other = "Movido a {{ .Hugo }} | Tema - {{ .Theme }}"
+[poweredBy]
+other = "Movido a {{ .Hugo }}"
+
+[hostedOn]
+other = "Hospedado em {{ .Host }}"
+
+[theme]
+other = "Tema - {{ .Theme }}"
 # === partials/footer.html ===
 
 # === partials/comment.html ===
@@ -165,7 +171,16 @@ other = "Autor"
 other = "Atualizado em {{ .Date }}"
 
 [readMarkdown]
-other = "Leia em Markdown"
+other = "Leia em markdown"
+
+[viewSource]
+other = "Ver fonte"
+
+[editThisPage]
+other = "Edite esta página"
+
+[reportThisPage]
+other = "Relatar problema"
 
 [back]
 other = "Voltar"

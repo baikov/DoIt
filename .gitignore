@@ -4,6 +4,7 @@ public/
 
 node_modules/
 build/
+gen_/
 
 ## OS Files
 # Windows
@@ -20,3 +21,4 @@ $RECYCLE.BIN/
 
 # Hugo
 .hugo_build.lock
+jsconfig.json

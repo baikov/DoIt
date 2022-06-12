@@ -24,7 +24,7 @@ math:
 
 <!--more-->
 
-## 1 内容组织 {#contents-organization}
+## 内容组织 {#contents-organization}
 
 以下是一些方便你清晰管理和生成文章的目录结构建议:
 
@@ -53,7 +53,7 @@ math:
 非常酷的功能! :(far fa-grin-squint fa-fw):
 {{< /admonition >}}
 
-## 2 作者配置 {#author-setup}
+## 作者配置 {#author-setup}
 
 我们鼓励你在 `mysite/data/authors` 下创建你的作者个人资料 `author_name.toml`. 在你的资料中, 你可以添加个人链接, 邮箱, 以及支持 i18n 的姓名.
 
@@ -83,7 +83,7 @@ authors: [Alice, Bob, Catherine]
 ---
 ```
 
-## 3 前置参数 {#front-matter}
+## 前置参数 {#front-matter}
 
 **Hugo** 允许你在文章内容前面添加 `yaml`, `toml` 或者 `json` 格式的前置参数.
 
@@ -122,7 +122,9 @@ ruby: true
 fraction: true
 fontawesome: true
 linkToMarkdown: true
+linkToSource: false
 linkToEdit: false
+linkToReport: false
 rssFullText: false
 license: ''
 
@@ -131,6 +133,9 @@ toc:
   auto: true
 code:
   copy: true
+  # ...
+table:
+  sort: true
   # ...
 math:
   enable: true
@@ -193,13 +198,16 @@ sponsor:
 * **fraction**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [分数扩展语法](#fraction).
 * **fontawesome**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [Font Awesome 扩展语法](#fontawesome).
 * **linkToMarkdown**: 如果设为 `true`, 内容的页脚将显示指向原始 Markdown 文件的链接.
-* **linkToEdit**: 如果设为 `false`, 则关闭页脚 **编辑此页** 的链接. 你可以将其设置为一个用于编辑这个页面的链接. 使用魔法变量 `{path}` 来获取这篇文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.zh-cn.md`.
+* **linkToSource**: {{< version 0.2.14 >}} 如果设为 `false`, 则关闭页脚 **view source** 的链接. 你可以将其设置为一个指向文章原始文件的链接. 使用魔法变量 `{path}` 来获取文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.en.md`.
+* **linkToEdit**:{{< version 0.2.13 >}} 如果设为 `false`, 则关闭页脚 **编辑此页** 的链接. 你可以将其设置为一个用于编辑这个页面的链接. 使用魔法变量 `{path}` 来获取这篇文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.zh-cn.md`.
+* **linkToReport**: {{< version 0.2.14 >}} 如果设为 `false`, 则关闭页脚 **报告问题** 的链接. 你可以将其设置为一个用于报告此页面中错误的链接. 使用魔法变量 `{path}` 来获取文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.en.md`, 使用 `{title}` 来获取文章的标题, 这篇文章的 `{title}` 为 `Theme Documentation - Content`, 使用 `{url}` 来获取文章的链接, 这篇文章的 `{url}` 为 `https://hugodoit.pages.dev/theme-documentation-content/`.
 * **rssFullText**: {{< version 0.2.4 >}} 如果设为 `true`, 在 RSS 中将会显示全文内容.
 * **pageStyle**: {{< version 0.2.11 >}} 调整页面样式, 可选择"normal"或"wide".
 * **license**: {{< version 0.2.14 >}} 许可协议信息 (支持 HTML 格式).
 
 * **toc**: {{< version 0.2.9 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.toc` 部分相同.
 * **code**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.code` 部分相同.
+* **table**: {{< version 0.2.14 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.table` 部分相同.
 * **math**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.math` 部分相同.
 * **mapbox**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.mapbox` 部分相同.
 * **share**: 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.share` 部分相同.
@@ -226,7 +234,7 @@ resources:
 ```
 {{< /admonition >}}
 
-## 4 内容摘要
+## 内容摘要
 
 **DoIt** 主题使用内容摘要在主页中显示大致文章信息. Hugo 支持生成文章的摘要.
 
@@ -273,11 +281,11 @@ resources:
 不建议在摘要内容中包含富文本块元素, 这会导致渲染错误. 例如代码块, 图片, 表格等.
 {{< /admonition >}}
 
-## 5 Markdown 基本语法
+## Markdown 基本语法
 
 这部分内容在 [Markdown 基本语法页面](../basic-markdown-syntax/) 中介绍.
 
-## 6 Markdown 扩展语法 {#extended-markdown-syntax}
+## Markdown 扩展语法 {#extended-markdown-syntax}
 
 **DoIt** 主题提供了一些扩展的语法便于你撰写文章.
 
