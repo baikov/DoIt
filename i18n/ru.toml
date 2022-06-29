@@ -161,6 +161,12 @@ other = "Главная"
 
 [readMore]
 other = "Подробнее"
+
+[outdatedInfoWarningBefore]
+other = "Последний раз данная статья обновлялась "
+
+[outdatedInfoWarningAfter]
+other = ", информация может быть устаревшей."
 # === posts/single.html ===
 
 # === 404.html ===
